@@ -6,7 +6,7 @@ map.start=[1,1];  %起始点 注意必须在地图范围内
 map.goal=[18,18];  %目标点 注意必须在地图范围内
 
 obstacle=GetBoundary(map);%得到边界数据
-nObstacle=0;%在地图中随机加入XX个障碍物
+nObstacle=20;%在地图中随机加入XX个障碍物
 obstacle=GetObstacle(nObstacle,obstacle,map);%障碍物和边界坐标
 obstacle = [obstacle;4,1; 4,2; 4,3; 4,4; 3,4 ;2,4;];%全封死的情况，是没有路的
 %obstacle = [obstacle;1,2;2,1;2,2];%此也为全封死的情况，也没有路的
